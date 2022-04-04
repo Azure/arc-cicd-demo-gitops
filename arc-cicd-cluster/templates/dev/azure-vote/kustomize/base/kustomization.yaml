@@ -4,9 +4,9 @@ kind: Kustomization
 namespace: dev
 
 images:
-  - name: ShengrossGitOpsACRcicd.azurecr.io/azvote/azure-vote-front
-    newTag: f981df8661ea7b4b7212f11f1af4a9fa88fd1f2a
-  - name: ShengrossGitOpsACRcicd.azurecr.io/azvote/azure-vote-back
-    newTag: f981df8661ea7b4b7212f11f1af4a9fa88fd1f2a
+  - name: shengrossdemoacr.azurecr.io/azvote/azure-vote-front
+    newTag: 8d5979dc50466dd8b2ec18bb80e280ce5748b9df
+  - name: shengrossdemoacr.azurecr.io/azvote/azure-vote-back
+    newTag: 8d5979dc50466dd8b2ec18bb80e280ce5748b9df
 resources:
   - manifests.yaml
