@@ -1,4 +1,4 @@
 title: "Voting Application"
 serviceType: ClusterIP
-imageRepo: ShengrossGitOpsACRcicd.azurecr.io/azvote
+imageRepo: shengrossdemoacr.azurecr.io/azvote
 demoAppUrl: "/"
