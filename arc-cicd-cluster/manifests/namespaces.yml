@@ -1,9 +1,9 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: dev
+  name: todos-dev
 ---
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: stage
+  name: todos-prod
