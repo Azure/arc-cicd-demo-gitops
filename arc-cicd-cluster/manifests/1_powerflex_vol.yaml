@@ -1,0 +1,46 @@
+kind: StatefulSet
+apiVersion: apps/v1
+metadata:
+  name: powerflex-1-volumes
+  namespace: default
+  labels:
+    podmon.dellemc.com/driver: csi-vxflexos
+spec:
+  serviceName: powerflex-1-volumes
+  replicas: 1
+  selector:
+    matchLabels:
+      app: powerflex-1-volumes
+    template:
+      metadata:
+        labels:
+          app: powerflex-1-volumes
+      spec:
+        containers:
+          - name: test
+            image: docker.io/centos:latest
+            command: [ "/bin/sleep", "3600" ]
+            volumeMounts:
+
+              - mountPath: "/data0"
+                name: pvolx0
+        volumes:
+          - name: pvolx0
+            persistentVolumeClaim:
+              claimName: pvolx0
+
+              ---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: pvolx0
+  namespace: default
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 2Gi
+  storageClassName: vxflexos
+
