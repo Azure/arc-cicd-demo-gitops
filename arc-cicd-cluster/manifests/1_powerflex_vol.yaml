@@ -29,7 +29,7 @@ spec:
             persistentVolumeClaim:
               claimName: pvolx0
 
-              ---
+---
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
