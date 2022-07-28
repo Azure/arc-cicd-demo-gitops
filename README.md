@@ -4,4 +4,4 @@ This repo contains the sample GitOps manifests for the Azure Arc GitOps CI/CD tu
 
 The GitOps repo can be found at <https://github.com/Azure/arc-cicd-demo-src>
 
-Please see the tutorial at <https://docs.microsoft.com/azure/azure-arc/kubernetes/tutorial-gitops-cicd>
+Please see the tutorial at <https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-gitops-flux2-ci-cd>
