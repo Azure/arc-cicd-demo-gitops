@@ -1,0 +1,4 @@
+title: "Voting Application"
+serviceType: ClusterIP
+imageRepo: clemm.azurecr.io/azvote
+demoAppUrl: "/"
